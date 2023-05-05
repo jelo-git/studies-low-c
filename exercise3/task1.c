@@ -3,7 +3,7 @@ int main()
 {
     FILE *file;
     char name[32];
-    printf("Enter the name of your test file: ");
+    printf("Enter the name of your test file (sample at 'task1sample.txt'): ");
     scanf("%s", name);
     file = fopen(name, "r");
     if (file == NULL)
