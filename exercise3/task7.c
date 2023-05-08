@@ -79,6 +79,7 @@ int main()
         fprintf(output, "%s", outputline);
     }
     printf("\n");
+    fclose(output);
     fclose(file);
     return 0;
 }

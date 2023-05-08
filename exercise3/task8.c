@@ -47,6 +47,7 @@ int main()
     printf("%s\n", outavg);
     fprintf(output, "%s\n", outsum);
     fprintf(output, "%s\n", outavg);
+    fclose(output);
     fclose(file);
     return 0;
 }
