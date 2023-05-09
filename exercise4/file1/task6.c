@@ -66,7 +66,7 @@ void calculateRMatirx(int Amatrix[MATRIX_SIZE][MATRIX_SIZE], int Bmatrix[MATRIX_
     {
         for (int m = 0; m < x; m++)
         {
-            output[n][m] = (Amatrix[n][m] == Bmatrix[n][m] ? 1 : 0);
+            output[n][m] = (Amatrix[n][m] == Bmatrix[n][m]);
         }
     }
 }
@@ -76,10 +76,9 @@ void calculatePMatirx(int Amatrix[MATRIX_SIZE][MATRIX_SIZE], int Bmatrix[MATRIX_
     {
         for (int m = 0; m < x; m++)
         {
-            output[n][m] = (Amatrix[n][m] > Bmatrix[n][m] ? 1 : 0);
+            output[n][m] = (Amatrix[n][m] > Bmatrix[n][m]);
         }
     }
-    printMatrix(Amatrix, x, y);
 }
 int main()
 {
@@ -101,7 +100,7 @@ int main()
     printMatrix(R, ax, ay);
     printf("Matrix P:\n");
     int P[MATRIX_SIZE][MATRIX_SIZE];
-    calculateRMatirx(A, B, ax, ay, P);
+    calculatePMatirx(A, B, ax, ay, P);
     printMatrix(P, ax, ay);
     return 0;
 }
